@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:flutter/foundation.dart';
 
 import 'package:skillswap1/core/errors/failure.dart';
 
@@ -10,9 +9,8 @@ import '../../domain/repositories/auth_repo.dart';
 class AuthRepoImpl implements AuthRepo{
   @override
   Future<Either<Failure, bool>> authenticateUser(Map<String, dynamic> credentials) {
-    if(!kIsWeb){
-      
-    }
+        // TODO: implement getUserData
+    throw UnimplementedError();
   }
 
   @override
