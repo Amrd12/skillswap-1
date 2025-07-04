@@ -21,3 +21,23 @@ class CacheFailure extends Failure {
   // TODO: implement props
   List<Object?> get props => [];
 }
+class FireStoreFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}
+class AuthenticationFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}
+class UserNotFoundFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}
+class UserAlreadyExistsFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}
+class PasswordErrorFailure extends Failure {
+  @override
+  List<Object?> get props => [];
+}
