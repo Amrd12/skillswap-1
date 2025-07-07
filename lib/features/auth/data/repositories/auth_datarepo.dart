@@ -5,7 +5,9 @@ import 'package:skillswap1/features/auth/data/sources/remote_data_source.dart';
 import 'package:skillswap1/features/auth/domain/entities/user_data.dart';
 import '../../domain/repositories/auth_repo.dart';
 import '../models/auth_data_model.dart';
+import 'package:injectable/injectable.dart';
 
+@lazySingleton(as AuthRepo)
 class AuthRepoImpl implements AuthRepo{
   AuthRemoteDataSource authRemoteDataSource;
   AuthRepoImpl({required this.authRemoteDataSource});

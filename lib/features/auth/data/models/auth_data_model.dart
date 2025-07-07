@@ -6,6 +6,7 @@ class AuthDataModel extends UserData {
   required super.age,
   required super.wantedskills,
   required super.grantedskills,});
+
   factory AuthDataModel.fromJson(Map<String, dynamic> json) {
     return AuthDataModel(
       name: json['name'],
@@ -14,6 +15,7 @@ class AuthDataModel extends UserData {
       wantedskills: json['wantedskills'],
       grantedskills: json['grantedskills'],);
   }
+  
   Map<String, dynamic> toJson() {
     return {
       'name': name,
